@@ -1,4 +1,13 @@
-# Cooking
+# Cooking App
+## Angular Proof of Concept (ng-poc)
+
+Developed an Angular 5 app as proof of concept to change a platform from traditional WordPress pages to a SPA.
+
+The dist folder (Angular Distribution) is provided to run locally. Data is persisted in Google's NoSQL Firebase.
+
+This app is hosted here: http://scogee-ng-poc.s3-website.us-east-2.amazonaws.com.
+
+## Angular Help
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.5.
 
@@ -14,15 +23,4 @@ Run `ng generate component component-name` to generate a new component. You can 
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
 
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
 # ng-poc
