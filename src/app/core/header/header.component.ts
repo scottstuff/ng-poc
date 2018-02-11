@@ -1,9 +1,7 @@
-import { Component
-	// , EventEmitter, Output 
-} from '@angular/core';
-// import { RecipeService } from '../recipes/recipe.service';
+import { Component } from '@angular/core';
+// import { HttpEvent, HttpEventType } from '@angular/common/http';
+
 import { DataStorageService } from '../../shared/data-storage.service';
-import { Response } from '@angular/http';
 import { AuthService } from '../../auth/auth.service';
 
 @Component({
@@ -11,34 +9,24 @@ import { AuthService } from '../../auth/auth.service';
   templateUrl: './header.component.html'
 })
 export class HeaderComponent {
-  // @Output() featureSelected = new EventEmitter<string>();
   constructor(private dataStorageService: DataStorageService,
-              private authService: AuthService){}
-  onSelect(feature: string) {
-    // this.featureSelected.emit(feature);
+              private authService: AuthService) {
   }
 
   onSaveData() {
     this.dataStorageService.storeRecipes()
       .subscribe(
-        (response: Response) => console.log(response),
-        (error: Response) => console.log(error)
+        (response) => {
+          console.log(response);
+        }
       );
   }
 
   onFetchData() {
     this.dataStorageService.getRecipes();
-      // .subscribe(
-      //   (response: Response) => console.log(response),
-      //   (error: Response) => console.log(error)
-      // );
   }
 
   onLogout() {
     this.authService.logout();
-  }
-
-  isAuth() {
-    return this.authService.isAuthenticated();
   }
 }

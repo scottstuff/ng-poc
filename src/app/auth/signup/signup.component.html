@@ -1,23 +1,21 @@
 <div class="row">
   <div class="col-xs-12 col-sm-10 col-md-8 col-sm-offset-1 col-md-offset-2">
-      <form (ngSubmit)="onSignup(f)" #f="ngForm">
-          <div class="form-group">
-              <label for="email">Mail</label>
-              <input type="email" id="email" name="email" 
-              class="form-control"
-              ngModel>
-            </div>
-            <div class="form-group">
-                <label for="password">Password</label>
-                <input type="password" id="password" name="password" 
-                class="form-control"
-                ngModel>
-              </div>
-      <!-- <button class="btn btn-primary" type="submit" [disabled]="!f.valid">Sign Up</button> -->
-      <button class="btn btn-primary" type="submit" disabled="disabled">Sign Up</button>
-      <div>
-          <p>Sign Up is disabled. Request access by <a href="mailto:scott.latsa@kanopyapps.com?subject=Cooking%20app%20access%20request">emailing me</a>.</p>
+    <form (ngSubmit)="onSignup(f)" #f="ngForm">
+      <div class="form-group">
+        <label for="email">Mail</label>
+        <input type="email" id="email" name="email" ngModel class="form-control">
       </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          ngModel
+          class="form-control">
+      </div>
+      <button class="btn btn-primary" type="submit" [disabled]="!f.valid">Sign Up</button>
     </form>
   </div>
 </div>
+
