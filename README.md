@@ -5,7 +5,7 @@ Developed an Angular 5 app as proof of concept to change a platform from traditi
 
 The dist folder (Angular Distribution) is provided to run locally. Data is persisted in Google's NoSQL Firebase.
 
-This app is hosted here: http://scogee-ng-poc.s3-website.us-east-2.amazonaws.com.
+This app is hosted on AWS here: http://scogee-ng-poc.s3-website.us-east-2.amazonaws.com/index.html. It also has an AWS CloudFront Distribution: http://d1lg8jz0ntlays.cloudfront.net.
 
 ## Angular Help
 
